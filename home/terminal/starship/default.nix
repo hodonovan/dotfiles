@@ -2,7 +2,7 @@
 
 let  
   starshipConfig = 
-    "${config.home.homeDirectory}/dotfiles/config/starship/config/starship.toml";
+    "${config.home.homeDirectory}/dotfiles/config/starship/starship.toml";
 in
 {
   programs.starship = {
