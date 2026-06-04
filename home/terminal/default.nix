@@ -7,6 +7,5 @@
     ./shell
     ./starship
     ./tmux
-    ./wezterm
   ];
 }

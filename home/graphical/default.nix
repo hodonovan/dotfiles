@@ -3,6 +3,7 @@
 {
   imports = [
     ./browsers
+    ./emulators
     ./fonts
     ./gnome
     ./office
