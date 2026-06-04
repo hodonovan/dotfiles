@@ -8,4 +8,6 @@
     ./office
     ./social
   ];
+
+  targets.genericLinux.enable = true;
 }
