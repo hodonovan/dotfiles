@@ -13,7 +13,7 @@ $python\
 $character"""
 
 [directory]
-style = "#ffffff" # koda.highlight (clean blue)
+style = "#ffffff"
 
 [character]
 success_symbol = "[\\$](#ffffff)"
@@ -21,29 +21,30 @@ error_symbol = "[\\$](#ff7676)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "#474747" # koda.dim
+style = "#474747"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](#f2a4db) ($ahead_behind$stashed)]($style)" # Using koda.pink for the text block inside
-style = "#701516"
-conflicted = ""
-untracked = ""
-modified = ""
-staged = ""
-renamed = ""
-deleted = ""
+format = "([$all_status$ahead_behind$stashed]($style) )"
+style = "#474747"
+
+conflicted = "*"
+untracked = "*"
+modified = "*"
+staged = "*"
+renamed = "*"
+deleted = "*"
 stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "#474747" # koda.dim
+style = "#474747"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "#d9ba73" # koda.warning / const (warm yellow)
+style = "#d9ba73"
 
 [python]
 format = "[$virtualenv]($style) "
-style = "#50585d" # koda.comment (gives your virtualenv a distinct gray from dim)
+style = "#50585d"
 detect_extensions = []
 detect_files = []
