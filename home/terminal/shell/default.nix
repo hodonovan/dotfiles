@@ -21,6 +21,7 @@
     bat
     btop
     curl
+    fastfetch
     tree
     tldr
     unzip
