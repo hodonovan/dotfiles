@@ -1,23 +1,18 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.termguicolors = false
+require('core.options')
 
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    'git', 'clone', '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git', '--branch=stable', lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
-vim.opt.clipboard = "unnamedplus"
-vim.opt.mouse = "a"
+require('lazy').setup({
+  spec = {
+    require('core.themes'),
 
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
-vim.keymap.set("n", "<leader>w", ":w<CR>", { silent = true })
-vim.keymap.set("n", "<leader>q", ":q<CR>", { silent = true })
-
-vim.g.netrw_banner = 0
-
-vim.opt.updatetime = 300
-vim.opt.timeoutlen = 500
-
--- Intentionally minimal; will expand later
+    { import = 'plugins' },
+  }
+})

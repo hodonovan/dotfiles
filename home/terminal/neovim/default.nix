@@ -18,7 +18,10 @@ in
     vi = "nvim";
     vim = "nvim";
   };
-  
-  xdg.configFile."nvim".source =
-    config.lib.file.mkOutOfStoreSymlink neovimConfig;
+
+  xdg.configFile."nvim/init.lua".source =
+    config.lib.file.mkOutOfStoreSymlink "${neovimConfig}/init.lua";
+
+  xdg.configFile."nvim/lua".source =
+    config.lib.file.mkOutOfStoreSymlink "${neovimConfig}/don";
 }

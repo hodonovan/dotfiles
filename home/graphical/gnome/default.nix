@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -11,6 +11,10 @@
       visible-name = "Koda Dark";
       use-theme-colors = false;
       
+      audible-bell = false;
+      use-system-font = false;
+      font = "JetBrainsMono Nerd Font 11";
+
       background-color = "#101010"; # koda.bg
       foreground-color = "#b0b0b0"; # koda.fg
       
