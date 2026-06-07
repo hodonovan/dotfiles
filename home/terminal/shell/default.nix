@@ -109,6 +109,7 @@
     tldr
     unzip
     wget
+    wl-clipboard
     zip
   ];
 }
