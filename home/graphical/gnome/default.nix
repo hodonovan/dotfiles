@@ -1,11 +1,17 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./dconf.nix
+  ];
+
   home.packages = with pkgs; [
+    dconf2nix
     dconf-editor
     gnome-tweaks
   ];
 
+  # Gnome terminal theming
   dconf.settings = {
     "org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9" = {
       visible-name = "Koda Dark";
