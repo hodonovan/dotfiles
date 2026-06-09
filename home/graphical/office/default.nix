@@ -27,6 +27,14 @@
     };
   };
 
+  programs.bash = {
+    initExtra = ''
+      zd() {
+          nohup zathura "$@" >/dev/null 2>&1 &
+      }
+    '';
+  };
+
   home.packages = with pkgs; [
     obsidian
     zotero
