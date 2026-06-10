@@ -24,4 +24,7 @@ in
 
   xdg.configFile."nvim/lua".source =
     config.lib.file.mkOutOfStoreSymlink "${neovimConfig}/don";
+
+  xdg.configFile."nvim/after".source =
+    config.lib.file.mkOutOfStoreSymlink "${neovimConfig}/after";
 }
