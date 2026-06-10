@@ -273,16 +273,16 @@ with lib.hm.gvariant;
 
     "org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9" = {
       audible-bell = false;
-      background-color = "#101010";
+      background-color = "#111111";
       cursor-background-color = "#ffffff";
       cursor-colors-set = true;
-      cursor-foreground-color = "#101010";
+      cursor-foreground-color = "#111111";
       font = "JetBrainsMono Nerd Font 11";
       foreground-color = "#b0b0b0";
       highlight-background-color = "#272727";
       highlight-colors-set = true;
       highlight-foreground-color = "#ffffff";
-      palette = [ "#101010" "#701516" "#14ba19" "#d9ba73" "#458ee6" "#f2a4db" "#5abfb5" "#b0b0b0" "#474747" "#ff7676" "#86cd82" "#d9ba73" "#8ebeec" "#f2a4db" "#ffffff" "#ffffff" ];
+      palette = [ "#111111" "#701516" "#14ba19" "#d9ba73" "#458ee6" "#f2a4db" "#5abfb5" "#b0b0b0" "#474747" "#ff7676" "#86cd82" "#d9ba73" "#8ebeec" "#f2a4db" "#ffffff" "#ffffff" ];
       use-system-font = false;
       use-theme-colors = false;
       visible-name = "Koda Dark";
